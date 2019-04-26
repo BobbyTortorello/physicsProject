@@ -1,18 +1,22 @@
 import UIKit
 
 class CircuitsViewController: UIViewController {
-
+    //Different Equation Label Outlets
     @IBOutlet weak var firstEquationLabel: UILabel!
     @IBOutlet weak var secondEquationLabel: UILabel!
     
+    //Different Varible Text Fields Outlets
     @IBOutlet weak var firstVaribleTextField: UITextField!
     @IBOutlet weak var secondVaribleTextField: UITextField!
     @IBOutlet weak var thirdVaribleTextField: UITextField!
     
+    //Equation Buttons Outlets
     @IBOutlet weak var firstEquationBut: UIButton!
     @IBOutlet weak var secondEquationBut: UIButton!
     
+    //Answer Label Outlet
     @IBOutlet weak var answerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Circuits"
@@ -60,28 +64,28 @@ class CircuitsViewController: UIViewController {
         answerLabel.text = String("The missing varible is \(answer)")
     }
     
-    func findAnswer(firstVar: String, secondVar: String, thirdVar: String) -> Int {
-        var finalAnswer = Int()
+    func findAnswer(firstVar: String, secondVar: String, thirdVar: String) -> Double {
+        var finalAnswer = Double()
         if firstEquationBut.isHidden == false {
             let voltage = firstVaribleTextField.text!
             let current = secondVaribleTextField.text!
             let resistence = thirdVaribleTextField.text!
             
             if  voltage ==  "" {
-                let finalVoltage = Int(current)! * Int(resistence)!
-                finalAnswer = finalVoltage % 100
+                let finalVoltage = Double(current)! * Double(resistence)!
+                finalAnswer = finalVoltage
                 answerLabel.text = "Voltage = \(String(finalAnswer))"
             }
             
             if current == "" {
-                let finalCurrent = Int(voltage)! / Int(resistence)!
-                finalAnswer = finalCurrent % 100
+                let finalCurrent = Double(voltage)! / Double(resistence)!
+                finalAnswer = finalCurrent
                 answerLabel.text = "Current = \(String(finalAnswer))"
             }
             
             if resistence == "" {
-                let finalResistence = Int(voltage)! / Int(current)!
-                finalAnswer  = finalResistence % 100
+                let finalResistence = Double(voltage)! / Double(current)!
+                finalAnswer  = finalResistence
                 answerLabel.text = "Resistence = \(String(finalAnswer))"
             }
         }
@@ -91,19 +95,19 @@ class CircuitsViewController: UIViewController {
             let voltage = thirdVaribleTextField.text!
             
             if  power == "" {
-                let finalPower = Int(current)! * Int(voltage)!
+                let finalPower = Double(current)! * Double(voltage)!
                 finalAnswer = finalPower
                 answerLabel.text = "Power = \(String(finalAnswer))"
             }
             
             if current == "" {
-                let finalCurrent = Int(power)! / Int(voltage)!
+                let finalCurrent = Double(power)! / Double(voltage)!
                 finalAnswer = finalCurrent
                 answerLabel.text = "Current = \(String(finalAnswer))"
             }
             
             if  voltage ==  ""  {
-                let finalVoltage = Int(power)! / Int(current)!
+                let finalVoltage = Double(power)! / Double(current)!
                 finalAnswer = finalVoltage
                 answerLabel.text = "Voltage = \(String(finalAnswer))"
             }

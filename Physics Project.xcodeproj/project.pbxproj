@@ -13,6 +13,8 @@
 		6A5A2B3422658B1400D3B89A /* Physics_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A5A2B3222658B1400D3B89A /* Physics_Project.xcdatamodeld */; };
 		6A5A2B3622658B1400D3B89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5A2B3522658B1400D3B89A /* Assets.xcassets */; };
 		6A5A2B3922658B1400D3B89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5A2B3722658B1400D3B89A /* LaunchScreen.storyboard */; };
+		6A67BEE322682C7B003A3D5B /* ElectroStaticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A67BEE222682C7B003A3D5B /* ElectroStaticsViewController.swift */; };
+		6A67BEE522682DE2003A3D5B /* CircuitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A67BEE422682DE2003A3D5B /* CircuitsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6A5A2B3522658B1400D3B89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5A2B3822658B1400D3B89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5A2B3A22658B1400D3B89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A67BEE222682C7B003A3D5B /* ElectroStaticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroStaticsViewController.swift; sourceTree = "<group>"; };
+		6A67BEE422682DE2003A3D5B /* CircuitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				6A5A2B2B22658B1400D3B89A /* AppDelegate.swift */,
 				6A5A2B2D22658B1400D3B89A /* ViewController.swift */,
+				6A67BEE222682C7B003A3D5B /* ElectroStaticsViewController.swift */,
+				6A67BEE422682DE2003A3D5B /* CircuitsViewController.swift */,
 				6A5A2B2F22658B1400D3B89A /* Main.storyboard */,
 				6A5A2B3522658B1400D3B89A /* Assets.xcassets */,
 				6A5A2B3722658B1400D3B89A /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A67BEE522682DE2003A3D5B /* CircuitsViewController.swift in Sources */,
 				6A5A2B3422658B1400D3B89A /* Physics_Project.xcdatamodeld in Sources */,
+				6A67BEE322682C7B003A3D5B /* ElectroStaticsViewController.swift in Sources */,
 				6A5A2B2E22658B1400D3B89A /* ViewController.swift in Sources */,
 				6A5A2B2C22658B1400D3B89A /* AppDelegate.swift in Sources */,
 			);
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98TSZCM79N;
 				INFOPLIST_FILE = "Physics Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98TSZCM79N;
 				INFOPLIST_FILE = "Physics Project/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

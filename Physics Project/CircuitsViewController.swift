@@ -35,6 +35,10 @@ class CircuitsViewController: UIViewController {
         thirdVaribleTextField.isHidden = false
         answerLabel.isHidden = false
         
+        firstVaribleTextField.text = ""
+        secondVaribleTextField.text = ""
+        thirdVaribleTextField.text = ""
+        
         firstVaribleTextField.placeholder = "Voltage"
         secondVaribleTextField.placeholder = "Current"
         thirdVaribleTextField.placeholder = "Resistence"
@@ -46,6 +50,10 @@ class CircuitsViewController: UIViewController {
         secondVaribleTextField.isHidden = false
         thirdVaribleTextField.isHidden = false
         answerLabel.isHidden = false
+        
+        firstVaribleTextField.text = ""
+        secondVaribleTextField.text = ""
+        thirdVaribleTextField.text = ""
         
         firstVaribleTextField.placeholder = "Power"
         secondVaribleTextField.placeholder = "Current"
@@ -66,7 +74,7 @@ class CircuitsViewController: UIViewController {
     
     func findAnswer(firstVar: String, secondVar: String, thirdVar: String) -> Double {
         var finalAnswer = Double()
-        if firstEquationBut.isHidden == false {
+        if firstEquationLabel.isHidden == false {
             let voltage = firstVaribleTextField.text!
             let current = secondVaribleTextField.text!
             let resistence = thirdVaribleTextField.text!

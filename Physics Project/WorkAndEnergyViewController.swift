@@ -116,9 +116,20 @@ class WorkAndEnergyViewController: UIViewController {
     }
     
     @IBAction func calculateButton(_ sender: UIButton) {
+        firstVariableTextField.isHidden = true
+        secondVariableTextField.isHidden = true
+        thirdVariableTextField.isHidden = true
+        
+        workLabel.isHidden = false
+        kineticEnergyLabel.isHidden = false
+        potentialEnergyLabel.isHidden = false
+        totalEnergyLabel.isHidden = false
+        
         let answer = findAnswer(firstVar: firstVariableTextField.text!, secondVar: secondVariableTextField.text!, thirdVar: thirdVariableTextField.text!)
         
         answerLabel.text = "The missing variable is \(String(answer))"
+        
+        self.resignFirstResponder()
     }
     
     func findAnswer(firstVar: String, secondVar: String, thirdVar: String) -> Double {

@@ -113,7 +113,13 @@ class MomentumViewController: UIViewController {
         let answer = findAnswer(firstVar: firstVaribleTextField.text!, secondVar: secondVariableTextField.text!, thirdVar: thirdVariableTextField.text!, fourthVar: fourthVariableTextField.text!)
         
         answerLabel.text = "The answer is \(String(answer))"
+        
+        self.resignFirstResponder()
     }
+    
+//    func dismissKeyboard() {
+//
+//    }
     
     func findAnswer(firstVar: String, secondVar: String, thirdVar: String, fourthVar: String) -> Double {
         var finalAnswer = Double()
